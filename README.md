@@ -28,3 +28,15 @@ JavaScript, WebRTC API
 
 [X] Breakout Rooms
 ```
+
+## Installation
+
+Install Packages:
+```
+npm install
+```
+
+To Run The Server:
+```
+npm run start
+```
