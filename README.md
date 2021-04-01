@@ -16,11 +16,11 @@ JavaScript, WebRTC API
 ```
 [✓] Setup NodeJS environment
 
-[X] Create Function to Create Sessions/Rooms
-
-[X] Create Video Chat Feature
+[X] Create and Integrate Video Chat Features
 
 [X] Create Text Chat Channel
+
+[X] Create Function to Create Sessions/Rooms
 
 [X] Create Splash Page
 
