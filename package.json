@@ -1,0 +1,29 @@
+{
+  "name": "RoomUp",
+  "version": "1.0.0",
+  "description": "Web Application That Lets You Video Chat with Friends or Family",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "server": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lordrickyz/RoomUp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lordrickyz/RoomUp/issues"
+  },
+  "homepage": "https://github.com/lordrickyz/RoomUp#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

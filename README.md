@@ -8,17 +8,21 @@ RoomUp is a clone of the popular video chat app [Zoom](https://zoom.us/). Users 
 
 ## Technologies Used
 
-JavaScript
+JavaScript, WebRTC API
 
 ## Planned Features
 [X] Pending  - [✓] Complete
 
 ```
-[X] Setup NodeJS environment
-
-[X] Create Splash Page
+[✓] Setup NodeJS environment
 
 [X] Create Function to Create Sessions/Rooms
+
+[X] Create Video Chat Feature
+
+[X] Create Text Chat Channel
+
+[X] Create Splash Page
 
 [X] Create User Settings Page
 
