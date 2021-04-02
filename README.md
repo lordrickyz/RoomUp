@@ -17,6 +17,10 @@ JavaScript, WebRTC API
 [✓] Setup NodeJS environment
 
 [X] Create and Integrate Video Chat Features
+  [X] Generate Room ID
+  [X] Connect own video
+  [X] Allow others to connect to video
+  [X] Mute button and stop video button
 
 [X] Create Text Chat Channel
 

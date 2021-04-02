@@ -1,3 +1,4 @@
+// Run Server
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -13,5 +14,11 @@ app.get('/', (req, res) => {
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));
+// Note: killall -9 node [If node unable to run]
 
-// killall -9 node
+// Room ID Creation
+const { v4: uuidv4 } = require('uuid')
+
+app.get('/:room', (req, res) => {
+  res.render('room', { roomId: req.params.room })
+})
