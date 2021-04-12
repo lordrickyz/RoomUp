@@ -4,3 +4,4 @@
 # misc
 /config/keys.js
 .DS_Store
+/requests/api.http
