@@ -12,10 +12,6 @@ const RoomSchema = new Schema ({
     type: Schema.Types.ObjectId,
     //  ref: 'users' if scaled on larger userbase.
   },
-  emptied: {
-    type: Boolean,
-    default: false
-  },
   date: {
     type: Date,
     default: Date.now

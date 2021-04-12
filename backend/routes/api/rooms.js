@@ -15,14 +15,21 @@ router.post('/', (req, res) => {
 router.get('/', (req, res) => {
   Room.find()
     .then(rooms => res.json(rooms))
-    .catch(err => res.status('404').json(err));
+    .catch(err => res.status(404).json(err))
+})
+
+// Request or View Room
+router.get('/:room_uuid', (req, res) => {
+  Room.find({uuid: req.params.room_uuid})
+    .then(room => res.json(room))
+    .catch(err => res.status(404).json(err))
 })
 
 
 // Delete Room
-router.delete('/:room_id', (req, res) => {
-  Room.findOneAndDelete({_id: req.params.room_id}, {$set: req.body})
-    .then(rooms => res.json({_id: rooms._id}))
+router.delete('/:room_uuid', (req, res) => {
+  Room.findOneAndDelete({uuid: req.params.room_uuid}, {$set: req.body})
+    .then(rooms => res.json({uuid: rooms.uuid}))
     .catch(err => res.status(404).json(err))
 })
 
