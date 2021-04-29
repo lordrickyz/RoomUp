@@ -31,9 +31,9 @@ export const fetchRoom = (uuid) => async dispatch => {
 }
 
 // Create Room
-export const submitRoom = (room) => async dispatch => {
+export const submitRoom = () => async dispatch => {
   try {
-    const res = await axios.post('http://localhost:5000/api/rooms', room)
+    const res = await axios.post('http://localhost:5000/api/rooms')
     dispatch(receiveRoom(res.data))
   }
   catch (err) {

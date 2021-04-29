@@ -1,21 +1,15 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { submitRoom } from '../../actions/roomActions'
+import RoomFormContainer from './roomForm';
 
-const splash = ({ submitRoom }) => {
+const splash = () => {
 
   return(
     <>
-     {/* 
-      button to create room;
-      form to join a room
-     */}
+      <div className="splash-bg">
+        <RoomFormContainer/>
+      </div>
     </>
   )
 }
 
-const mdp = dispatch => ({
-  submitRoom: room => dispatch(submitRoom(room))
-})
-
-export default connect(null, mdp)(splash);
+export default splash;
