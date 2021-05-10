@@ -8,6 +8,7 @@ export const removeRoom = createAction('REMOVE_ROOM');
 
 // Axios Dispatchers
 // View Rooms
+// Localhost will be changed once development phase is complete.
 export const fetchRooms = () => async dispatch => {
   try {
     const res = await axios.get('http://localhost:5000/api/rooms')

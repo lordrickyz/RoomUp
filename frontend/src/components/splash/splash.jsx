@@ -1,15 +1,14 @@
 import React from 'react';
 import RoomFormContainer from './roomForm';
 
-const splash = () => {
-
-  return(
-    <>
+class Splash extends React.Component {
+  render() {
+    return(
       <div className="splash-bg">
         <RoomFormContainer/>
       </div>
-    </>
-  )
+    )
+  }
 }
 
-export default splash;
+export default Splash;
