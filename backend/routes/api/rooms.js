@@ -25,13 +25,11 @@ router.get('/:room_uuid', (req, res) => {
     .catch(err => res.status(404).json(err))
 })
 
-
 // Delete Room
 router.delete('/:room_uuid', (req, res) => {
   Room.findOneAndDelete({uuid: req.params.room_uuid}, {$set: req.body})
     .then(rooms => res.json({uuid: rooms.uuid}))
     .catch(err => res.status(404).json(err))
 })
-
 
 module.exports = router;
