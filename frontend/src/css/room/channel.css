@@ -1,39 +1,81 @@
-html,
-body {
+html, body {
   height: 100%;
-  margin: 0;
 }
+
+#root, .App {
+  height: 100%;
+}
+
+.channel {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  border: 1px solid red;
+}
+
 /* Main Box */
 .channel-box{
   height: 100%;
   display: flex;
   flex-flow: row;
-  border: 3px solid yellow
+  /* border: 1px solid yellow */
 }
 
+/* Video and Chat Containers */
 .channel-view {
-  /* display: flex;
-  flex-direction: column; */
+  width: 75%;
+  flex-flow: row;
 }
 
 .channel-sidebar {
   width: 25%;
-  border: 2px solid red;
   display: flex;
   flex-direction: column;
+  border: 1px solid red;
 }
 
+/* Components Sizing */
 .channel-video {
+  height: 80%;
+  min-height: 14em;
   font-size: 30px;
-  border: 2px solid black;
-  width: 75%;
+  border: 1px solid black;
 }
 
+.channel-video-buttons {
+  height: 20%;
+  min-height: 4em;
+  border: 1px solid blue;
+}
 
 .channel-people {
+  height: 30%;
+  min-height: 10em;
   border: 1px solid green;
 }
 
 .channel-chat {
-  border: 1px solid coral;
+  height: 70%;
+  min-height: 20em;
+  border: 1px solid aqua;
 }
+
+/**
+ * Basic CSS Media Query Template
+ * ------------------------------------------
+ *  Responsive Grid Media Queries - 1280, 1024, 768, 480
+ *   1280-1024   - desktop (default grid)
+ *   1024-768    - tablet landscape
+ *   768-480     - tablet 
+ *   480-less    - phone landscape & smaller
+ * --------------------------------------------
+ */
+@media all and (min-width: 1024px) and (max-width: 1280px) { 
+  
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+
+@media all and (min-width: 480px) and (max-width: 768px) { }
+
+@media all and (max-width: 480px) { }

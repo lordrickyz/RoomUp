@@ -6,12 +6,10 @@ import RoomContainer from './routes/room/channelContainer';
 
 function App({ store }) {
   return (
-    <div>
-      <Switch>
-        <Route exact path="/" component={HomeContainer}/>
-        <Route exact path="/rooms/:roomId" component={RoomContainer}/>
-      </Switch>
-    </div>
+    <Switch>
+      <Route exact path="/" component={HomeContainer}/>
+      <Route exact path="/rooms/:roomId" component={RoomContainer}/>
+    </Switch>
   );
 }
 
