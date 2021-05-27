@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../css/room/channel.css'
 
 class Channel extends React.Component {
   // constructor(props) {
@@ -7,12 +8,16 @@ class Channel extends React.Component {
 
   render() {
     return (
-      <>
-        <div class="row">
-          <div class="video-screen">Video Screen</div>
-          <div class="chat-log">Chat Logs</div>
+      <div className="channel-box">
+        <div className="channel-view">
+          <div className="channel-video">Video Screen</div>
+          <div className="channel-video-buttons">Buttons</div>
         </div>
-      </>
+        <div className="channel-sidebar">
+          <div className="channel-people">People Count</div>
+          <div className="channel-chat">Chat Logs</div>
+        </div>
+      </div>
     );
   }
 }

@@ -1,0 +1,39 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+/* Main Box */
+.channel-box{
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+  border: 3px solid yellow
+}
+
+.channel-view {
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.channel-sidebar {
+  width: 25%;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+.channel-video {
+  font-size: 30px;
+  border: 2px solid black;
+  width: 75%;
+}
+
+
+.channel-people {
+  border: 1px solid green;
+}
+
+.channel-chat {
+  border: 1px solid coral;
+}

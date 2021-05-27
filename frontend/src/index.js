@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
-import { HashRouter } from 'react-router-dom'
+import { HashRouter, BrowserRouter } from 'react-router-dom'
 import './index.css';
 import App from './App';
 import { configureAppStore } from './store/store'
@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   ReactDOM.render(
     <Provider store={store}>
-      <HashRouter>
+      <BrowserRouter>
        <App />
-      </HashRouter>
+      </BrowserRouter>
     </Provider>,
     document.getElementById('root')
   );
