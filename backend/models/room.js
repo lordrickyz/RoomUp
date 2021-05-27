@@ -16,6 +16,13 @@ const RoomSchema = new Schema ({
     type: Date,
     default: Date.now
   },
+  private: {
+    type: Boolean,
+    default: false,
+  },
+  pass: {
+    type: String
+  },
 }, {
   timestamps: true,
 })

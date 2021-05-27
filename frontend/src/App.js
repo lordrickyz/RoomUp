@@ -1,20 +1,17 @@
-import { Provider } from 'react-redux'
-import { HashRouter, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
 
-import SplashPage from './components/splash/splash'
-// import RoomPage from ''
+import HomeContainer from './routes/home/homeContainer';
+import RoomPage from './routes/room/channel';
 
 function App({ store }) {
   return (
-    <Provider store={store}>
-      <HashRouter>
-        <Switch>
-          <Route path="/" component={SplashPage}/>
-          {/* <Route path="/room/:roomId" component={RoomPage}/> */}
-        </Switch>
-      </HashRouter>
-    </Provider>
+    <div>
+      <Switch>
+        <Route exact path="/" component={HomeContainer}/>
+        <Route path="/room/:roomID" component={RoomPage}/>
+      </Switch>
+    </div>
   );
 }
 

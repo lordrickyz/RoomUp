@@ -7,8 +7,21 @@ export const receiveRoom = createAction('RECEIVE_ROOM');
 export const removeRoom = createAction('REMOVE_ROOM');
 
 // Axios Dispatchers
-// View Rooms
 // Localhost will be changed once development phase is complete.
+// Create Room
+export const submitRoom = () => async dispatch => {
+  try {
+    const res = await axios.post('http://localhost:5000/api/rooms')
+    dispatch(receiveRoom(res.data))
+    return res.data.uuid;
+  }
+  catch (err) {
+    console.log(err)
+  }
+}
+
+
+// View Rooms
 export const fetchRooms = () => async dispatch => {
   try {
     const res = await axios.get('http://localhost:5000/api/rooms')
@@ -24,17 +37,6 @@ export const fetchRooms = () => async dispatch => {
 export const fetchRoom = (uuid) => async dispatch => {
   try {
     const res = await axios.get(`http://localhost:5000/api/rooms/${uuid}`)
-    dispatch(receiveRoom(res.data))
-  }
-  catch (err) {
-    console.log(err)
-  }
-}
-
-// Create Room
-export const submitRoom = () => async dispatch => {
-  try {
-    const res = await axios.post('http://localhost:5000/api/rooms')
     dispatch(receiveRoom(res.data))
   }
   catch (err) {

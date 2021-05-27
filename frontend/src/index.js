@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux'
+import { HashRouter } from 'react-router-dom'
 import './index.css';
 import App from './App';
 import { configureAppStore } from './store/store'
@@ -10,9 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log(process.env.NODE_ENV)
 
   ReactDOM.render(
-    <React.StrictMode>
-      <App store={store}/>
-    </React.StrictMode>,
-  document.getElementById('root')
+    <Provider store={store}>
+      <HashRouter>
+       <App />
+      </HashRouter>
+    </Provider>,
+    document.getElementById('root')
   );
 })
