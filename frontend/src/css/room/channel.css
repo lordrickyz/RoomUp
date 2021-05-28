@@ -35,12 +35,6 @@ html, body {
 }
 
 /* Components Sizing */
-.channel-video {
-  height: 80%;
-  min-height: 14em;
-  font-size: 30px;
-  border: 1px solid black;
-}
 
 .channel-video-buttons {
   height: 20%;

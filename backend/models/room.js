@@ -8,14 +8,6 @@ const RoomSchema = new Schema ({
     default: uuidv4,
     require: true
   },
-  participants: {
-    type: Schema.Types.ObjectId,
-    //  ref: 'users' if scaled on larger userbase.
-  },
-  date: {
-    type: Date,
-    default: Date.now
-  },
   private: {
     type: Boolean,
     default: false,

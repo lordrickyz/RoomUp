@@ -1,0 +1,23 @@
+/* Video Container */
+.channel-video {
+  height: 80%;
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  min-height: 14em;
+  font-size: 30px;
+  border: 1px solid black;
+}
+
+ /* User Videos */
+.video-card {
+  width: 50%;
+  height: 50%;
+  border: 2px solid black;
+}
+
+.video-peer-card {
+  width: 50%;
+  height: 50%;
+  border: 2px solid black;
+}

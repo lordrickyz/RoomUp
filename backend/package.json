@@ -2,11 +2,11 @@
   "name": "RoomUp",
   "version": "1.0.0",
   "description": "Web Application That Lets You Video Chat with Friends or Family",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "server": "nodemon --inspect app.js"
+    "start": "node server.js",
+    "server": "nodemon --inspect server.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,9 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.12.3",
+    "peer": "^0.6.1",
     "requests": "^0.3.0",
+    "socket.io": "^4.1.2",
     "uuid": "^8.3.2",
     "validator": "^13.5.2"
   },
